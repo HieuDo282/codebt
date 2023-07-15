@@ -12,11 +12,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background.jpg') no-repeat;
+    background: url('images/background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-
-
 }
 
 header {
@@ -24,7 +22,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 5px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,6 +98,7 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-top: 51px;
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
 }
@@ -188,7 +187,8 @@ header {
 
 
 .input-box input:focus~label,
-.input-box input:valid~label {
+.input-box input:valid~label
+ {
     top: -5px;
 }
 
@@ -269,3 +269,4 @@ header {
 .login-register p a:hover {
     text-decoration: underline;
 }
+
