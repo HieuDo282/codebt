@@ -1,3 +1,4 @@
+
 const wrapper = document.getElementById('wrapper');
 const loginLink = document.getElementById('login-link');
 const registerLink = document.getElementById('register-link');
@@ -20,21 +21,13 @@ iconClose.addEventListener('click', () => {
     wrapper.classList.remove('active-popup');
 });
 
-let product = [
-    ["images/Teddy.jpg", "Bear", "scottish longhair", "2,000$"],
-    ["images/fox.jpg", "Fox", "scottish longhair", "2,000$"],
-    ["images/jiyon.jpg", "Jiyon", "scottish shorthair", "2,000$"],
-    ["images/quinn.jpg", "Quinn", "british shorthair", "2,000$"],
-]
-function showProduct() {
-    let str = "";
-    for (let i = 0; i < products.length; i++) {
-        str += `<div class='product'>`;
-        str += `<p><img src="${products[i][0]}" width="100px"</p>`;
-        str += `<p>${products[i][1]}</p>`;
-        str += `<p>${products[i][2]}</p>`;
-        str += `</div>`;
+function login() {
+    let username = document.getElementById("text_login_email").value;
+    let password = document.getElementById("text_login_password").value;
+    if (password === "28022000"){
+        window.localStorage.setItem("User",username);
+        window.location.href="products.html";
+    }else{
+        alert("Sai thông tin đăng nhập")
     }
-    document.getElementById("list-product").innerHTML = str;
 }
-showProduct();
