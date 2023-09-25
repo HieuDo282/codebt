@@ -8,6 +8,7 @@
 //     tiktokLink.addEventListener("click", handleLinkClick)
 //     facebookLink.addEventListener("click", handleLinkClick);
 //   });
+// helllo
 document.addEventListener("DOMContentLoaded", function() {
     let instagramLink = document.querySelector(".fa-brands.fa-instagram");
     let facebookLink = document.querySelector(".fa-brands.fa-facebook a");
